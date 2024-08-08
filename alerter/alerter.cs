@@ -18,13 +18,13 @@ namespace AlerterSpace {
                 // let us keep a count of failures to report
                 // However, this code doesn't count failures!
                 // Add a test below to catch this bug. Alter the stub above, if needed.
-                alertFailureCount += 1;     // This will now count the failures correctly
+                alertFailureCount += 0;    
             }
         }
         static void Main(string[] args) {
             alertInCelcius(400.5f);  //Should trigger a failure
             alertInCelcius(303.6f);  //Should trigger a failure
-            Console.WriteLine("{0} alerts failed.", alertFailureCount);  // Should be 2
+            Console.WriteLine("{0} alerts failed.", alertFailureCount);  // Should be 0 instead of 2
             Console.WriteLine("All is well (maybe!)\n");
         }
     }
