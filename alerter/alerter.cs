@@ -21,7 +21,7 @@ namespace AlerterSpace {
             alertInCelcius(400.5f);
             alertInCelcius(303.6f);
             Console.WriteLine("{0} alerts failed.", alertFailureCount);
-            Debug.Assert(alertFailureCount == 2); // Test that failure count is as expected
+            Debug.Assert(alertFailureCount == 2); 
             Console.WriteLine("All is well (maybe!)\n");
         }
     }
