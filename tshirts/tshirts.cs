@@ -6,7 +6,7 @@ namespace TshirtSpace {
         static string Size(int cms) {
             if(cms < 38) {
                 return "S";
-            } else if(cms > 38 && cms < 42) {
+            } else if(cms >= 38 && cms <= 42) {
                 return "M";
             } else {
                 return "L";
@@ -14,7 +14,8 @@ namespace TshirtSpace {
         }
         static void Main(string[] args) {
             Debug.Assert(Size(37) == "S");
-            Debug.Assert(Size(38) == "M"); //should fail because 38 should be 'S'
+            Debug.Assert(Size(38) == "M");
+             Debug.Assert(Size(42) == "M");
             Debug.Assert(Size(43) == "L");
             Console.WriteLine( "All is well (maybe!)");
         }
